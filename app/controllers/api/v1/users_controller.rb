@@ -6,9 +6,11 @@ class Api::V1::UsersController < ApplicationController
         if @user.valid?
             render json: { user: @user }, status: :created
         else 
-            render json: { message: "didnt work insert message here" }, status:  :not_acceptable 
+            render json: { message: "enter a valid user" }, status:  :not_acceptable 
         end
     end
+
+
 
     private
     def user_params
