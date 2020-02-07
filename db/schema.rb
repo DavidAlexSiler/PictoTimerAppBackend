@@ -42,6 +42,7 @@ ActiveRecord::Schema.define(version: 2020_02_07_082358) do
     t.string "title"
     t.string "image"
     t.string "email"
+    t.string "password_digest"
     t.text "bio"
     t.integer "phone_number"
     t.datetime "created_at", null: false
