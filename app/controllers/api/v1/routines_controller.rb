@@ -1,7 +1,7 @@
 class Api::V1::RoutineController < ApplicationController
     def index
         @routines = routine.all
-        render json: @routine
+        render json: @routines
     end
 
     def show
